@@ -44,7 +44,7 @@ public class CategoryDetails extends AppCompatActivity {
         categoryDetailsList.setLayoutManager(new GridLayoutManager(this,2));
         categoryDetailsList.setAdapter(adapter);
 
-        String url = "http://192.168.1.65/mytv/api.php?key=1A4mgi2rBHCJdqggsYVx&id=1&cat="+category.getName();
+        String url = "http://192.168.0.102/mytv/api.php?key=1A4mgi2rBHCJdqggsYVx&id=1&cat="+category.getName();
 
         dataService.getChannelData(url, new ChannelDataService.OnDataResponse() {
             @Override

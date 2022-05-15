@@ -40,7 +40,7 @@ public class Categories extends AppCompatActivity {
         categoryAdapter = new CategoryAdapter(categoryList);
         categoryLists.setAdapter(categoryAdapter);
 
-        dataService.getChannelData("http://192.168.1.65/tvapp/api.php?key=1A4mgi2rBHCJdqggsYVx&id=1&categories=all", new ChannelDataService.OnDataResponse() {
+        dataService.getChannelData("http://192.168.0.102/tvapp/api.php?key=1A4mgi2rBHCJdqggsYVx&id=1&categories=all", new ChannelDataService.OnDataResponse() {
             @Override
             public void onResponse(JSONObject response) {
                 for(int i = 0; i<response.length();i++){
